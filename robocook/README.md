@@ -10,9 +10,9 @@ The data breakdown per tool is as follows:
 
 In total, this aggregates to 2460 episodes, with each episode comprising roughly 50 frames.
 
-We use the 7-DoF Franka Emika Panda robot arm and its parallel jaw gripper as the base robot. Four calibrated Intel RealSense D415 RGB-D cameras are fixed on vertical metal bars around the robot tabletop. The cameras capture **1280×720** RGB-D images. We also design a set of 3D-printed tools based on real-world dough manipulation tools. Please refer to the [paper](https://arxiv.org/abs/2306.14447) for more details on our setup.
+We use the 7-DoF Franka Emika Panda robot arm and its parallel jaw gripper as the base robot. Four calibrated Intel RealSense D415 RGB-D cameras are fixed on vertical metal bars around the robot tabletop. The cameras capture **1280×720** RGB-D images (downsampled to **256x256** in this dataset). We also design a set of 3D-printed tools based on real-world dough manipulation tools. Please refer to the [paper](https://arxiv.org/abs/2306.14447) for more details on our setup.
 
-During the data collection phase, we captured a temporally and spatially smoothed point cloud stream. To optimize storage and maintain compatibility with the RLDS dataset format, we projected the point cloud back to an RGB-D image. Consequently, it's typical to notice gaps in the image, indicative of filtered-out noisy depth values. We also include both camera extrinsics and intrinsics within the dataset, facilitating point cloud reconstruction if needed.
+During the data collection phase, we captured a temporally and spatially smoothed point cloud stream. To optimize storage and maintain compatibility with the RLDS dataset format, we projected the point cloud back to an RGB-D image. Consequently, it's typical to notice gaps in the image, indicative of filtered-out noisy depth values. We also include both camera extrinsics within the dataset.
 
 A visualization of the data collection process:
 

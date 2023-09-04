@@ -12,6 +12,7 @@ robocook/CITATIONS.bib
 robocook/README.md
 robocook/__init__.py
 robocook/create_example_data.py
+robocook/parse_point_cloud.py
 robocook/robocook_dataset_builder.py
 robocook.egg-info/PKG-INFO
 robocook.egg-info/SOURCES.txt
