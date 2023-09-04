@@ -70,7 +70,7 @@ def transform_step(step: Dict[str, Any]) -> Dict[str, Any]:
         },
         "action": np.concatenate(
             [
-                step["observation"]["state"],
+                step["action"],
                 np.array([step["is_terminal"]]).astype(np.float32),
             ]
         ),
